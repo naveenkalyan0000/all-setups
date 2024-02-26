@@ -1,7 +1,8 @@
-curl -o eksctl https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_Linux_amd64.tar.gz
+sudo curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
 sudo mv /tmp/eksctl /usr/local/bin
 export PATH=$PATH:/usr/local/bin
 source ~/.bashrc
 eksctl version
 
 
+#do this step by step dont execute in script
